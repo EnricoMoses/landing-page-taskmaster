@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>TaskMaster - Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- link icon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- style css -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+
+</head>
+<body>
+  <!-- custom cursor -->
+  <div class="cursor-dot"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header>
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="logo-pill">TM</div>
+        <div class="brand-text">Task<span>Master</span></div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        ☰ <span>Menu</span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#hero">Beranda</a>
+        <a href="#features">Fitur</a>
+        <a href="#showcase">Demo</a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <!-- isi teksnya diatur via JS -->
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-parallax-bg"></div>
+
+    <div class="hero-inner">
+      <div data-reveal>
+        <div class="hero-badge">
+          <div class="hero-badge-dot"></div>
+          TaskMaster • To-Do App Modern
+        </div>
+        <h1 class="hero-title">
+          Satu tempat untuk
+          <span id="func-title"></span>
+        </h1>
+        <p class="hero-subtitle">
+          TaskMaster membantu kamu merencanakan hari dengan to-do list yang rapi, progress
+          yang jelas, dan tampilan yang bikin semangat produktif—tanpa ribet.
+        </p>
+
+        <div class="hero-cta">
+          <button class="btn-primary">
+            Mulai Sekarang
+            <span>➜</span>
+          </button>
+          <a href="#showcase">
+            <button class="btn-ghost">
+              <span>▶</span> Lihat demo TaskMaster
+            </button>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <strong>Tanpa install apa pun</strong>
+            Cukup buka di browser, tugasmu langsung tertata.
+          </div>
+          <div class="hero-meta-item">
+            <strong>Fokus pada yang penting</strong>
+            Prioritas, deadline, dan progress dalam satu layar.
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-preview-wrapper" data-reveal>
+        <div class="hero-preview">
+          <div class="hero-preview-header">
+            <h2>To-Do App</h2>
+            <p>Keep it up! Produktif setiap hari.</p>
+          </div>
+
+          <div class="hero-preview-progress-card">
+            <div>
+              <div class="hero-preview-progress-text">Keep it Up!</div>
+              <div class="hero-preview-progress-sub">
+                <div class="hero-preview-progress-fill"></div>
+              </div>
+            </div>
+            <div class="hero-preview-progress-badge">
+              0 / 0
+            </div>
+          </div>
+
+          <div class="hero-preview-input">
+            <span class="icon">＋</span>
+            <div>
+              <strong>Add a new task...</strong><br />
+              <span style="font-size:0.75rem;color:var(--text-soft)">
+                Tulis apa yang ingin kamu selesaikan hari ini.
+              </span>
+            </div>
+          </div>
+
+          <div class="hero-preview-input">
+            <span class="icon">📝</span>
+            <div style="font-size:0.8rem;">
+              Add a short description <span style="opacity:.8">(optional)</span>...
+            </div>
+          </div>
+
+          <div class="hero-preview-search">
+            <span class="icon">🔍</span>
+            <span>Search tasks...</span>
+          </div>
+
+          <div class="hero-preview-footer">
+            Auto-sync • Zero distraction • Smart focus
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FITUR UNGGULAN ============ -->
+  <section class="section" id="features">
+    <div class="section-header" data-reveal>
+      <div class="section-kicker">Fitur Unggulan</div>
+      <h2 class="section-title">Kenapa memilih TaskMaster?</h2>
+      <p class="section-subtitle">
+        Dirancang untuk mahasiswa dan pekerja produktif yang ingin semua tugas, jadwal, dan ide
+        dalam satu tempat yang tenang dan rapi.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <article class="feature-card" data-reveal>
+        <div class="feature-icon">⚡</div>
+        <h3 class="feature-title">Cepat & Responsif</h3>
+        <p class="feature-desc">
+          Dibuka dari HP ataupun laptop, TaskMaster tetap ringan, responsif, dan halus saat digunakan.
+        </p>
+        <div class="feature-pill">
+          <span>•</span> Optimasi untuk mobile & desktop
+        </div>
+      </article>
+
+      <article class="feature-card" data-reveal>
+        <div class="feature-icon">🧠</div>
+        <h3 class="feature-title">Mudah Dipahami</h3>
+        <p class="feature-desc">
+          Tampilan intuitif, ikon jelas, dan alur yang sederhana membuat kamu langsung paham tanpa tutorial panjang.
+        </p>
+        <div class="feature-pill">
+          <span>•</span> Fokus pada hal yang penting
+        </div>
+      </article>
+
+      <article class="feature-card" data-reveal>
+        <div class="feature-icon">📊</div>
+        <h3 class="feature-title">Progress yang Jelas</h3>
+        <p class="feature-desc">
+          Lihat jumlah tugas selesai, progress bar harian, dan overview aktivitasmu secara sekilas.
+        </p>
+        <div class="feature-pill">
+          <span>•</span> Bikin kamu termotivasi
+        </div>
+      </article>
+
+      <article class="feature-card" data-reveal>
+        <div class="feature-icon">🌙</div>
+        <h3 class="feature-title">Dark & Light Mode</h3>
+        <p class="feature-desc">
+          Atur tampilan sesuai suasana—mode gelap untuk malam hari, mode terang untuk siang.
+        </p>
+        <div class="feature-pill">
+          <span>•</span> Hemat mata & baterai
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SHOWCASE / DEMO ============ -->
+  <section class="section" id="showcase">
+    <div class="section-header" data-reveal>
+      <div class="section-kicker">Showcase</div>
+      <h2 class="section-title">Lihat TaskMaster beraksi</h2>
+      <p class="section-subtitle">
+        Berikut tampilan simulasi TaskMaster berbasis to-do list yang clean dan modern, terinspirasi dari desain aplikasi yang kamu buat.
+      </p>
+    </div>
+
+    <div class="showcase-layout">
+      <div class="showcase-image-wrapper" data-reveal>
+        <div class="showcase-float-tag">
+          <span class="icon">✅</span>
+          3 tugas selesai hari ini!
+        </div>
+
+        <div class="showcase-image-frame">
+          <div class="showcase-animated-glow"></div>
+
+          <img src="screenshoot-app.PNG" alt="Screenshot TaskMaster To-Do App" />
+        </div>
+      </div>
+
+      <div data-reveal>
+        <p class="showcase-text">
+          Landing page ini hanya <strong>simulasi tampilan</strong>, tapi menggambarkan bagaimana TaskMaster
+          bekerja sebagai pusat kendali tugas harianmu: menambahkan to-do, memberi deskripsi singkat,
+          dan mencari task yang sudah menumpuk.
+        </p>
+
+        <ul class="showcase-points">
+          <li>
+            <div class="showcase-bullet">1</div>
+            <div>
+              <strong>Tambah tugas dalam sekali ketik.</strong><br />
+              Field input utama memudahkanmu menulis hal yang harus selesai hari ini.
+            </div>
+          </li>
+          <li>
+            <div class="showcase-bullet">2</div>
+            <div>
+              <strong>Deskripsi opsional untuk detail ekstra.</strong><br />
+              Cocok untuk catatan penting seperti deadline, tempat, atau catatan kecil lain.
+            </div>
+          </li>
+          <li>
+            <div class="showcase-bullet">3</div>
+            <div>
+              <strong>Fitur pencarian cepat.</strong><br />
+              Cari tugas lama dengan mudah hanya dengan satu kata kunci.
+            </div>
+          </li>
+          <li>
+            <div class="showcase-bullet">4</div>
+            <div>
+              <strong>Progress harian yang selalu hidup.</strong><br />
+              Progress bar dan animasi lembut membuat tampilan terasa dinamis, tidak statis.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div>
+        <span class="footer-name">Enrico Moses Wijaya</span> • TaskMaster Landing Page
+      </div>
+      <div class="footer-links">
+        <a href="https://instagram.com/enricomoses_" target="_blank" rel="noopener">
+          <span class="footer-icon ig bx bxl-instagram"></span>
+          <span>@enricomoses_</span>
+        </a>
+        <a href="https://github.com/EnricoMoses" target="_blank" rel="noopener">
+          <span class="footer-icon bx bxl-github"></span>
+          <span>EnricoMoses</span>
+        </a>
+        <a href="mailto:c14250038@john.petra.ac.id">
+          <span class="footer-icon bx bx-envelope"></span>
+          <span>c14250038@john.petra.ac.id</span>
+        </a>
+        <a href="https://line.me/ti/p/~enricomoses" target="_blank" rel="noopener">
+          <span class="footer-icon lni lni-line"></span>
+          <span>enricomoses</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudFlare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"> </script>
+  <script src="script.js"></script>
+</body>
+</html>
